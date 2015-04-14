@@ -1,6 +1,6 @@
 {
-    "src": "/Users/abc/Desktop/WorkSpace/MyBlog/qiniu",
-   "dest": "qiniu:access_key=rB5I8s8vgm2TIQ1LpRsnmkViHSKkeXT0bCSlBa4Z&secret_key=qTmJf-TY7D5LLU-Us0wI3NDznIxMFg_Ucxe-EONp&bucket=duger&key_prefix=dalian/",
+    "src": "/Users/abc/Desktop/WorkSpace/MyBlog/qiniu/bueatyFadeLoveStay",
+   "dest": "qiniu:access_key=rB5I8s8vgm2TIQ1LpRsnmkViHSKkeXT0bCSlBa4Z&secret_key=qTmJf-TY7D5LLU-Us0wI3NDznIxMFg_Ucxe-EONp&bucket=duger&key_prefix=bueatyFadeLoveStay/",
     "deletable": 0,
     "debug_level":  1
 }

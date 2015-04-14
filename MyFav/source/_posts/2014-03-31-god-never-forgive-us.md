@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: photo
 title: "随遇而安"
 description: ""
 category: 只言片语

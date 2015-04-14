@@ -1,13 +1,13 @@
 title: "[转]ios中关于delegate （委托）的使用心得 - duger"
-tags: []
+tags: [delegate]
 date: 2013-09-11 20:24:00
-category:
+category: [技术,iOS]
 ---
 
 <div id="article_content" class="article_content"><span style="font-size: 15px;">从开始从事OC工作到现在大概1年多了，从当初接触oc的"协议"的不明白，到现在代码中随处可见的委托，协议，其中感悟颇多。</span><div><span style="font-size: 15px;">&nbsp;</span></div><div><span style="font-size: 15px;">首先，大家应该都明白的是委托是协议的一种，顾名思义，就是委托他人帮自己去做什么事。也就是当自己做什么事情不方便的时候，就可以建立一个委托，这样就可以委托他人帮自己去实现什么方法。</span></div><div><span style="font-size: 15px;">&nbsp;</span></div><div><span style="font-size: 15px;">其次，我简单的总结了一下自己用到的委托的作用有两个，一个是传值，一个是传事件。</span></div><div><span style="font-size: 15px;">1.所谓传值经常用在b类要把自己的一个数据或者对象传给a类，让a类去展示或者处理。（切分紧耦合，和代码分块的时候经常用）</span></div><div><span style="font-size: 15px;">2.所谓传事件就是a类发生了什么事，把这件事告诉关注自己的人，也就是委托的对象，由委托的对象去考虑发生这个事件后应该做出什么反映。（这个经常见，例如在异步请求中，界面事件触发数据层改变等等）</span></div><div><span style="font-size: 15px;">3.利用委托赋值，这种方法感觉是为了不暴露自己的属性就可以给自己复值，而且这样更方便了类的管理，只有在你想要让别人给你赋值的时候才调用，这样的赋值更可控一些。（例如tableView中的委托（dateSource）中常见）。</span></div><div><span style="font-size: 15px;">&nbsp;</span></div><div><span style="font-size: 15px;">最后，我想分享一下在使用委托的时候的一些心得和注意事项。</span></div><div><span style="font-size: 15px;">&nbsp;</span></div><div><span style="font-size: 15px;">心得：delegate的命名要准确，尽量看名字就知道用法。delegate和通知有的用法有些象，但是前者是单对单的，后者是单对多的情况。</span></div><div><span style="font-size: 15px;">注意：在dealloc要把delegate至为nil，还有就是delegate设置属性的时候要用assign，不要用retain。</span></div><div><span style="font-size: 15px;">&nbsp;</span></div><div><span style="font-size: 15px;">**委托**</span>
 
 <span style="font-size: 15px;">在IOS中委托通过一种@protocol的方式实现,所以又称为协议.协议是多个类共享的一个方法列表,在协议中所列出的方法没有响应的实现，由其它人来实现.这叫好比我想买个手机，所以我有个buyIphone 方法,但是我不知道谁那买手机,所以把这个需求发布出去(比如公布在网站上),如果有卖手机的商人(也就是说他能实现buyIphone这个方法)看到，他就会接受我的委托,(在商人自己的类中实现&lt;XXXdelegate&gt;),那么我的委托对象就指向了这个商人..当我要买手机的时候，直接找他就行了.</span>
-
+<!--more-->
 <span style="font-size: 15px;">例如:</span>
 <div style="background-color: #F5F5F5;border: 1px solid #CCCCCC;padding:10px;"><span style="font-size: 15px;">@protocol MyDelegate
 -(void)buyIphone:(NSString *)iphoneType money:(NSString *)money;

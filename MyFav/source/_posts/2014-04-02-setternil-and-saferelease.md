@@ -2,7 +2,7 @@
 layout: post
 title: "setter=nil and saferelease"
 description: ""
-category: 技术
+category: [技术,iOS]
 tags: [setter]
 ---
 

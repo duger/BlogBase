@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title type="text">博客园_duger</title><subtitle type="text"></subtitle><id>uuid:306843f2-4955-4f1c-958d-f16909782194;id=5963</id><updated>2014-09-05T03:34:02Z</updated><author><name>duger</name><uri>http://www.cnblogs.com/duger/</uri></author><generator>feed.cnblogs.com</generator><entry>
+<id>http://www.cnblogs.com/duger/p/3526183.html</id>
+<title type="text">
+苹果开发者中心 Certificates，Identifiers & Profiles 备忘录 - duger
+</title>
+<summary type="text">
+概述：首先得描述一下各个证书的定位，作用，这样在制作的时候心中有谱，对整个流程的把握也会准确一些；1、Certificate开发者证书（分为开发和发布两种，类型为ios Development,ios Distribution）这个是最基础的，不论是真机调试，还是上传到appstore都是需要的，是...
+</summary>
+<published>2014-01-19T13:12:00Z</published>
+<updated>2014-01-19T13:12:00Z</updated>
+<author>
+<name>duger</name>
+<uri>http://www.cnblogs.com/duger/</uri>
+</author>
+<link rel="alternate" href="http://www.cnblogs.com/duger/p/3526183.html"/>
+<link rel="alternate" type="text/html" href="http://www.cnblogs.com/duger/p/3526183.html"/>
+<content type="html">
+概述：首先得描述一下各个证书的定位，作用，这样在制作的时候心中有谱，对整个流程的把握也会准确一些；1、Certificate开发者证书（分为开发和发布两种，类型为ios Development,ios Distribution）这个是最基础的，不论是真机调试，还是上传到appstore都是需要的，是...<img src="http://counter.cnblogs.com/blog/rss/3526183" width="1" height="1" alt=""/><br/><p>本文链接：<a href="http://www.cnblogs.com/duger/p/3526183.html" target="_blank">苹果开发者中心 Certificates，Identifiers &amp; Profiles 备忘录</a>，转载请注明。</p>
+</content>
+</entry></feed>

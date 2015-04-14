@@ -2,7 +2,7 @@
 layout: post
 title: "apple touch icon"
 description: ""
-category: 技术
+category: [技术,iOS]
 tags: [iOS]
 ---
 
@@ -20,7 +20,7 @@ tags: [iOS]
 apple-touch-icon 标签支持sizes属性，可以用来放置对应不同的设备。
 
 57×57（默认值）的图标对应320×640的iphone老设备，72×72对应ipad，114×114对应retina屏的iPhone及iTouch。ipad3对应144×144的高分辨率。
-
+<!--more-->
 所以最完善的写法应该是：
 
 	<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />  

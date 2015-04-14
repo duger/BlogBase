@@ -15,7 +15,7 @@ tags: [code review,Phabricator,LAMP,ContOS]
 * Google的Gerrit
 
 看了CodeReview那么多好处，在单位也没时间搞这东西，干脆自己先研究一下，自己先把Code Review做起来。
-<!--more-->
+
 ###安装
 本来想着应该是个软件吧，下下来就能用。去[Phabricator官网](http://phabricator.org)上溜达了一圈儿。翻了翻[**官方教程**](https://secure.phabricator.com/book/phabricator/article/installation_guide/)，发现原来这厮还得要台Web服务器：
 >* **Apache**: Many installs use Apache + mod_php.
@@ -23,7 +23,7 @@ tags: [code review,Phabricator,LAMP,ContOS]
 >* **lighttpd** : lighttpd is less popular than Apache or nginx, but it works fine.
 >* **Other**: Other webservers which can run PHP are also likely to work fine, although these installation instructions will not cover how to set them up.
 >* **PHP Builtin Server**: You can use the builtin PHP webserver for development or testing, although it should not be used in production.
-
+<!--more-->
 还需要:
 > * **MySQL**: You need MySQL.
 > * **PHP**: You need PHP 5.2 or newer.
